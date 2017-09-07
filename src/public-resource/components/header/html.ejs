@@ -3,9 +3,12 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title><% if (pageTitle) { %> <%= pageTitle %> - <% } %> XXXX后台</title>
+  <title><% if (pageTitle) { %> <%= pageTitle %> <% } %></title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" /> 
   <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!--[if lt IE 10]>
     <script src="<%= DIRS.BUILD_FILE.js.html5shiv %>"></script>
@@ -15,3 +18,51 @@
   <!--[if lt IE 9]>
     <script src="<%= DIRS.BUILD_FILE.js.respond %>"></script>
   <![endif]-->
+  <header id="header">
+    <div class="logoBar">
+      <div class="logoBar-right">
+          <div>
+            <span>130-1111-6779</span>
+            <span>huaxiajunan@126.com</span>
+          </div>
+      </div>
+      <div class="logoBar-left">
+        <div>
+            <a href="#"></a>
+            <!-- 百度搜的很少人这样用 -->
+            <h1 style="display:none">华夏君安</h1>
+        </div>
+        <div>
+          <img src="<%= require('../../imgs/slogan.png') %>" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav id="navbar">
+    <ul>
+      <li>
+        <a href="#">首页</a>
+      </li>
+      <li>
+        <a href="#">甲醛治理</a>
+      </li>
+      <li>
+        <a href="#">新风系统</a>
+      </li>
+      <li>
+        <a href="#">室内空气检测</a>
+      </li>
+      <li>
+        <a href="#">产品中心</a>
+      </li>
+      <li>
+        <a href="#">成功案例</a>
+      </li>
+      <li>
+        <a href="#">新闻中心</a>
+      </li>
+      <li>
+        <a href="#">关于我们</a>
+      </li>
+    </ul>
+  </nav>

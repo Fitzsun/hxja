@@ -1,4 +1,6 @@
+//  html.js文件只用来组装html,css,js统一在page.js中require()
 require('cp');
+require('./page.less');
 const config = require('configModule');
 
 $(() => {

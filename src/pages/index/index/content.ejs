@@ -1,6 +1,220 @@
-<div id="page-wrapper">
-  <div class="container-fluid">
-    <h2 class="page-header">欢迎进入XXX管理后台！</h2>
-  </div>
-  <!-- /.container-fluid -->
+<style type="text/css">
+  #smbanner{
+    width:100%;
+    height:238px;
+    margin:50px 0;
+    background:url(<%= BUILD_FILE.images['smbanner'] %>) no-repeat scroll center;
+  }
+</style>
+<div id="carousel" >
+  <ul>
+    <li class="show"><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""> </li>
+    <li><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""> </li>
+    <li><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""> </li>
+  </ul>
+  <ol class="clearfix">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
 </div>
+<section id="desc">
+  <main>
+    <div class="desc-list overflow clearfix">
+      <dl>
+        <dt>甲醛治理</dt>
+        <dd>室内车内甲醛治理，还你清新呼吸</dd>
+        <dd><img src="<%= BUILD_FILE.images['formaldehyde'] %>" alt=""></dd>
+        <dd><a href="#">查看详情</a></dd>
+      </dl>
+      <dl>
+        <dt>新风系统</dt>
+        <dd>让呼吸更自由，远离雾霾等伤害</dd>
+        <dd><img src="<%= BUILD_FILE.images['newsystem'] %>" alt=""></dd>
+        <dd><a href="#">查看详情</a></dd>
+      </dl>
+      <dl>
+        <dt>室内空气检测</dt>
+        <dd>对身边的空气环境全方位了解</dd>
+        <dd><img src="<%= BUILD_FILE.images['air-test'] %>" alt=""></dd>
+        <dd><a href="#">查看详情</a></dd>
+      </dl>
+    </div>
+    <div class="product-center">
+      <p>产品中心<span>Product center of Huaxiajunan</span></p>
+      <ul class="clearfix">
+        <li>
+          <a href="#"><span>华夏君安产品中心</span></a>
+        </li>
+        <li>
+          <a href="#"><span>霍尼韦尔T30新风系统</span></a>
+          <img src="<%= BUILD_FILE.images['product2'] %>" alt="">
+        </li>
+        <li>
+          <a href="#"></a>
+          <img src="<%= BUILD_FILE.images['product3'] %>" alt="">
+        </li>
+        <li>
+          <a href="#"></a>
+          <img src="<%= BUILD_FILE.images['product4'] %>" alt="">
+        </li>
+      </ul>
+      <ul class="clearfix">
+        <li>
+          <a href="#"><span>华夏君安产品中心</span></a>
+          <img src="<%= BUILD_FILE.images['product2'] %>" alt="">
+        </li>
+        <li>
+          <a href="#"></a>
+          <img src="<%= BUILD_FILE.images['product3'] %>" alt="">
+        </li>
+        <li>
+          <a href="#"></a>
+          <img src="<%= BUILD_FILE.images['product4'] %>" alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="company-desc">
+      <p>公司简介<span>Company profile of Huaxiajunan</span></p>
+      <p>北京华夏君安科技有限公司，是一家从2010年起专业从事室内空气治理服务单位，是国内最早开发和拓展改领域的先驱者之一，华夏君安紧跟时代需要，为室内空气质量贡献自己微薄的力量。我们一直在努力！</p>
+    </div>
+  </main>
+</section>
+<div id="smbanner"></div>
+<section id="bottom">
+  <main>
+    <div class="successful-cases">
+      <p>成功案例<span>Successful cases of Huaxiajunan</span></p>
+      <div class="list-items">
+        <ul class="clearfix">
+          <li>
+            <div>
+              <img src="<%= BUILD_FILE.images['case1'] %>" alt="">
+            </div>
+            <dl>
+              <dt>融恒嘉汇空气治理</dt>
+              <dd>服务时间：2016.05.08</dd>
+              <dd>建筑面积：5000平方米</dd>
+              <dd>服务内容：<p>超标甲醛及粉尘治理，治理后，原超标污染物均符合国家标准</p></dd>
+            </dl>
+            <span></span>
+          </li>
+          <li>
+            <div>
+              <img src="<%= BUILD_FILE.images['case2'] %>" alt="">
+            </div>
+            <dl>
+              <dt>融恒嘉汇空气治理</dt>
+              <dd>服务时间：2016.05.08</dd>
+              <dd>建筑面积：5000平方米</dd>
+              <dd>服务内容：<p>超标甲醛及粉尘治理，治理后，原超标污染物均符合国家标准</p></dd>
+            </dl>
+            <span></span>
+          </li>
+          <li>
+            <div>
+              <img src="<%= BUILD_FILE.images['case3'] %>" alt="">
+            </div>
+            <dl>
+              <dt>融恒嘉汇空气治理</dt>
+              <dd>服务时间：2016.05.08</dd>
+              <dd>建筑面积：5000平方米</dd>
+              <dd>服务内容：<p>超标甲醛及粉尘治理，治理后，原超标污染物均符合国家标准</p></dd>
+            </dl>
+            <span></span>
+          </li>
+          <li>
+            <div>
+              <img src="<%= BUILD_FILE.images['case4'] %>" alt="">
+            </div>
+            <dl>
+              <dt>融恒嘉汇空气治理</dt>
+              <dd>服务时间：2016.05.08</dd>
+              <dd>建筑面积：5000平方米</dd>
+              <dd>服务内容：<p>超标甲醛及粉尘治理，治理后，原超标污染物均符合国家标准</p></dd>
+            </dl>
+            <span></span>
+          </li>
+          <li>
+            <div>
+              <img src="<%= BUILD_FILE.images['case5'] %>" alt="">
+            </div>
+            <dl>
+              <dt>融恒嘉汇空气治理</dt>
+              <dd>服务时间：2016.05.08</dd>
+              <dd>建筑面积：5000平方米</dd>
+              <dd>服务内容：<p>超标甲醛及粉尘治理，治理后，原超标污染物均符合国家标准</p></dd>
+            </dl>
+            <span></span>
+          </li>
+        </ul>
+        <a href="#">查看更多</a>
+      </div>
+    </div>
+    <div class="honor">
+      <p>荣誉资质<span>Honor and qualification of Huaxiajunan</span></p>
+      <ul class="clearfix">
+        <li>
+          <div>
+            <img src="<%= BUILD_FILE.images['honor1'] %>" alt="">
+          </div>
+          <p>室内环境监测治理达标单位</p>
+        </li>
+        <li>
+          <div>
+            <img src="<%= BUILD_FILE.images['honor2'] %>" alt="">
+          </div>
+          <p>室内环境监测治理达标单位</p>
+        </li>
+        <li>
+          <div>
+            <img src="<%= BUILD_FILE.images['honor3'] %>" alt="">
+          </div>
+          <p>室内环境监测治理达标单位</p>
+        </li>
+        <li>
+          <div>
+            <img src="<%= BUILD_FILE.images['honor4'] %>" alt="">
+          </div>
+          <p>室内环境监测治理达标单位</p>
+        </li>
+        <li>
+          <div>
+            <img src="<%= BUILD_FILE.images['honor5'] %>" alt="">
+          </div>
+          <p>室内环境监测治理达标单位</p>
+        </li>
+      </ul>
+      <ul class="clearfix">
+        <li>
+          <div><img src="<%= BUILD_FILE.images['advantage1'] %>" alt=""></div>
+          <dl>
+            <dt>多年经验</dt>
+            <dd>从事室内空气治理多年经验丰富</dd>
+          </dl>
+        </li>
+        <li>
+          <div><img src="<%= BUILD_FILE.images['advantage2'] %>" alt=""></div>
+          <dl>
+            <dt>多年经验</dt>
+            <dd>从事室内空气治理多年经验丰富</dd>
+          </dl>
+        </li>
+        <li>
+          <div><img src="<%= BUILD_FILE.images['advantage3'] %>" alt=""></div>
+          <dl>
+            <dt>多年经验</dt>
+            <dd>从事室内空气治理多年经验丰富</dd>
+          </dl>
+        </li>
+        <li>
+          <div><img src="<%= BUILD_FILE.images['advantage4'] %>" alt=""></div>
+          <dl>
+            <dt>多年经验</dt>
+            <dd>从事室内空气治理多年经验丰富</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </main>
+</section>

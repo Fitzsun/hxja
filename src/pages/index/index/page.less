@@ -34,6 +34,7 @@
   }
 }
 #desc{
+  width:100%;
   main{
     width:1200px;
     margin:0 auto;
@@ -221,13 +222,10 @@
     }
     .honor{
       .heading;
+      margin-bottom:50px;
       >ul:first-of-type{
         >li{
-          // line-height: 150px;
           float:left;
-          // display: table-cell;
-          // text-align: center;
-          // vertical-align:middle;
           margin-left:60px;
           &:first-of-type{
             margin-left:0;
@@ -235,8 +233,12 @@
           div{
             width:192px;
             height:150px;
+            line-height: 150px;
             border:1px solid #ccc;
             margin-bottom: 12px;
+            img{
+              vertical-align: middle;
+            }
           }
           >p{
             margin:0;
@@ -250,11 +252,68 @@
           float:left;
           width:300px;
           height:100px;
+          display: flex;
+          padding:15px 0;
+          &:hover{
+            >div{
+              transform:perspective(600px) rotateY(360deg);
+              transition: transform 1s ease-in-out;
+            }
+          }
+          >div{
+            // 深入理解vertical-align
+            line-height: 100px;
+            padding:0 25px;
+            img{
+              vertical-align: baseline;
+            }
+          }
+          >dl{
+            text-align: left;
+            width: 130px;
+            dt{
+              font-size: 16px;
+              color:#666;
+              margin-bottom:16px;
+            }
+            dd{
+              font-size: 14px;
+              color:#999;
+            }
+          }
           &:first-of-type{
             border-left:none;
           }
         }
       }
-    }
-  }
+    }  // honor end
+    .news{
+      margin-bottom:50px;
+      >p{
+        margin-bottom:28px;
+        color:#666;
+      }
+      .news-carousel{
+        float:left;
+      }
+      .list-news{
+        float:left;
+        height:300px;
+        width:580px;
+        margin-left:40px;
+        >li{
+          margin:25px 0;
+          a{
+            font-size: 16px;
+            color:#666;
+          }
+          >span{
+            font-size: 14px;
+            color:#999;
+            float:right;
+          }
+        }
+      }
+    } // news end
+  }  // main end
 }

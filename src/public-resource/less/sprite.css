@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-nav-email {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 18px;
+}
+.icon-locationIcon {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -18px;
+  width: 15px;
+  height: 22px;
+}
+.icon-nav-tel {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -40px;
+  width: 19px;
+  height: 22px;
+}
+.icon-guesthouse {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -62px;
+  width: 45px;
+  height: 33px;
+}
+.icon-school {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -95px;
+  width: 51px;
+  height: 34px;
+}
+.icon-office {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -129px;
+  width: 36px;
+  height: 36px;
+}
+.icon-hospital {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -165px;
+  width: 35px;
+  height: 37px;
+}
+.icon-KTV {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -202px;
+  width: 37px;
+  height: 37px;
+}
+.icon-house {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -239px;
+  width: 37px;
+  height: 37px;
+}
+.icon-kindergarten {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -276px;
+  width: 43px;
+  height: 37px;
+}
+.icon-office building {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -313px;
+  width: 30px;
+  height: 40px;
+}
+.icon-hotel {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -353px;
+  width: 43px;
+  height: 40px;
+}
+.icon-club {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -393px;
+  width: 37px;
+  height: 41px;
+}

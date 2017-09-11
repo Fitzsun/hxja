@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var SpritesmithPlugin = require('webpack-spritesmith');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
@@ -17,6 +18,27 @@ var configPlugins = [
     'window.$': 'jquery',
     Vue: 'vue',
     vue: 'vue',
+  }),
+
+  /* 抽取出所有通用的部分 */
+  new SpritesmithPlugin({
+    // 目标小图标
+    src: {
+      cwd: path.resolve(dirVars.publicDir, './imgs/sprite'),
+      glob: '*.png',
+    },
+    // 输出雪碧图文件和样式文件
+    target: {
+      image: path.resolve(dirVars.publicDir, './imgs/sprite.png'),
+      css: path.resolve(dirVars.publicDir, './less/sprite.css'),
+    },
+    // 样式文件中调用雪碧图地址写法
+    apiOptions: {
+      cssImageRef: '../imgs/sprite.png',
+    },
+    spritesmithOptions: {
+      algorithm: 'top-down',
+    },
   }),
   /* 抽取出所有通用的部分 */
   new webpack.optimize.CommonsChunkPlugin({

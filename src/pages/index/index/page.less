@@ -19,6 +19,7 @@
     }
   }
 }
+// 主要板块标题样式
 .heading{
   text-align: center;
   >p:first-of-type{
@@ -39,7 +40,10 @@
     width:1200px;
     margin:0 auto;
     .desc-list{
-      margin:160px 0 50px 0;
+      // IE中的bug,  width margin 这两行不写IE中不居中,靠左排版
+      width:1200px;
+      margin:0 auto;
+      padding:160px 0 50px 0;
       dl{
         float:left;
         width:350px;
@@ -150,6 +154,8 @@
     width:1200px;
     margin:0 auto;
     .successful-cases{
+      width:1200px;
+      margin:0 auto;
       .heading;
       .list-items{
         li{
@@ -221,6 +227,8 @@
       }
     }
     .honor{
+      width:1200px;
+      margin:0 auto;
       .heading;
       margin-bottom:50px;
       >ul:first-of-type{
@@ -288,8 +296,10 @@
       }
     }  // honor end
     .news{
-      margin-bottom:50px;
+      width:1200px;
+      margin:0 auto 50px;
       >p{
+        text-align: left;
         margin-bottom:28px;
         color:#666;
       }
@@ -297,6 +307,7 @@
         float:left;
       }
       .list-news{
+        text-align: left;
         float:left;
         height:300px;
         width:580px;

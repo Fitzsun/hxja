@@ -78,6 +78,7 @@ module.exports = {
     'newsBanner': require('!!file-loader?name=static/images/[name].[ext]!../imgs/newsCenter/newsBanner.jpg'),
     'asideLogo': require('!!file-loader?name=static/images/[name].[ext]!../imgs/newsCenterDetail/asideLogo.jpg'),
     'workHard': require('!!file-loader?name=static/images/[name].[ext]!../imgs/newsCenterDetail/workhard.png'),
+    'newsDetail': require('!!file-loader?name=static/images/[name].[ext]!../imgs/newsCenterDetail/newsDetail.jpg'),
   },
   // dll: {
   //   js: require('!!file-loader?name=dll/dll.js!../../dll/dll.js'),

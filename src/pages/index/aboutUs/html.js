@@ -5,5 +5,5 @@ const dirsConfig = config.DIRS;
 
 const renderData = Object.assign({}, dirsConfig, {content});
 module.exports = layout.init({
-  pageTitle: '产品中心',
+  pageTitle: '关于我们',
 }).run(content(renderData));

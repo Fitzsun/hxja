@@ -20,10 +20,13 @@
 }
 main{
   width:1200px;
-  margin:0 auto;
+  margin:0 auto 50px;
+  position: relative;
   .content{
     width:800px;
-    border:1px solid red;
+    >p{
+      margin:20px 0;
+    }
   }
   .bread-crumbs{
     text-align: left;
@@ -53,4 +56,45 @@ main{
     text-align: left;
   }
 
+}
+.aside{
+  position: absolute;
+  left:830px;
+  top:15px;
+}
+.news-list{
+  text-align: left;
+  &:nth-of-type(2){
+    margin-top:68px;
+  }
+  dt{
+    // border:1px solid red;
+    font-weight: 900;
+    display: flex;
+    align-content: space-around;
+    span{
+      padding-left:10px;
+      height:30px;
+      line-height: 30px;
+    }
+  }
+  dd{
+    margin:10px 0;
+    padding-left:12px;
+    i{
+      display: inline-block;
+      width:7px;
+      height:12px;
+      margin-right:5px;
+    }
+    a{
+      color:#666;
+      &:hover{
+        color:#48abff;
+      }
+    }
+  }
+}
+.aside-logo{
+  margin:130px 0 50px 0;
 }

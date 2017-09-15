@@ -70,22 +70,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 37px;
   height: 37px;
 }
-.icon-hospital {
+.icon-kindergarten {
   background-image: url(../imgs/sprite.png);
   background-position: 0px -244px;
+  width: 43px;
+  height: 37px;
+}
+.icon-hospital {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -281px;
   width: 35px;
   height: 37px;
 }
 .icon-KTV {
   background-image: url(../imgs/sprite.png);
-  background-position: 0px -281px;
-  width: 37px;
-  height: 37px;
-}
-.icon-kindergarten {
-  background-image: url(../imgs/sprite.png);
   background-position: 0px -318px;
-  width: 43px;
+  width: 37px;
   height: 37px;
 }
 .icon-hotel {
@@ -106,27 +106,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 37px;
   height: 41px;
 }
-.icon-auIdea {
+.icon-nextSlide {
   background-image: url(../imgs/sprite.png);
   background-position: 0px -476px;
+  width: 24px;
+  height: 44px;
+}
+.icon-prevSlide {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -520px;
+  width: 23px;
+  height: 44px;
+}
+.icon-auIdea {
+  background-image: url(../imgs/sprite.png);
+  background-position: 0px -564px;
   width: 50px;
   height: 50px;
 }
 .icon-auSpirit {
   background-image: url(../imgs/sprite.png);
-  background-position: 0px -526px;
+  background-position: 0px -614px;
   width: 50px;
   height: 50px;
 }
 .icon-auMission {
   background-image: url(../imgs/sprite.png);
-  background-position: 0px -576px;
+  background-position: 0px -664px;
   width: 50px;
   height: 50px;
 }
 .icon-auGoal {
   background-image: url(../imgs/sprite.png);
-  background-position: 0px -626px;
+  background-position: 0px -714px;
   width: 50px;
   height: 50px;
 }

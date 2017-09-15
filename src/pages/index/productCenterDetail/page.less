@@ -32,10 +32,13 @@
         margin-right:10px;
       }
       display: flex;
-      .bread-crumbs{
-        display: flex;
-        a{
-          color:#666;
+    }
+    .bread-crumbs{
+      display: flex;
+      a{
+        color:#666;
+        &:hover{
+          color:#48abff;
         }
       }
     }
@@ -70,6 +73,19 @@
           padding:13px 0 13px 20px;
           display: block;
         }
+        // 设置placeholder的颜色
+        ::-webkit-input-placeholder{
+          color:#999;
+        }
+        :-ms-input-placeholder{
+          color:#999;
+        }
+        ::-moz-placeholder{
+          color:#999;
+        }
+        :-moz-placeholder{
+          color:#999;
+        }
         button{
           position: relative;
           display: inline-block;
@@ -103,6 +119,12 @@
         }
       }
       li{
+        // &:hover{
+        //   background: #48abff;
+        //   a{
+        //     color:#fff;
+        //   }
+        // }
         line-height: 30px;
         a{
           display: block;
@@ -118,8 +140,11 @@
       height:1px;
       background: #48abff;
     }
-    .list-content{
+    .tab-container{
+      width:1200px;
+      margin:0 auto;
       height:1284px;
+      border:1px solid red;
     }
   }
 }

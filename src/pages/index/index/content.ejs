@@ -6,17 +6,32 @@
     background:url(<%= BUILD_FILE.images['smbanner'] %>) no-repeat scroll center;
   }
 </style>
-<div id="carousel" >
-  <ul>
-    <li class="show"><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""> </li>
-    <li><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""> </li>
-    <li><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""> </li>
-  </ul>
-  <ol class="clearfix">
-    <li></li>
-    <li></li>
-    <li></li>
+<div class="carousel-container" class="clearfix">
+  <div class="bd">
+    <ul class="carousel-inner">
+      <li class="show">
+        <a href="#"><img src="<%= BUILD_FILE.images['index-bg'] %>" alt=""></a>
+        <dl class="carousel-caption">
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </li>
+      <li>
+        <a href="#"><img src="<%= BUILD_FILE.images['sysBanner'] %>" alt=""></a>
+      </li>
+      <li>
+        <a href="#"><img src="<%= BUILD_FILE.images['testBanner'] %>" alt=""></a>
+      </li>
+    </ul>
+  </div>
+  <ol class="clearfix carousel-indicator">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
   </ol>
+  <!-- 设置轮播控制器 -->
+  <a class="carousel-control prev" href="#"><span class="icon icon-prevSlide"></span></a>
+  <a class="carousel-control next" href="#"><span class="icon icon-nextSlide"></span></a>
 </div>
 <section id="desc">
   <main>
@@ -221,7 +236,9 @@
       <div class="clearfix">
         <div class="news-carousel">
           <ul>
-            <li><img src="<%= BUILD_FILE.images['news-carousel1'] %>" alt=""></li>
+            <li>
+              <a href="#"><img src="<%= BUILD_FILE.images['news-carousel1'] %>" alt=""></a>
+            </li>
           </ul>
         </div>
         <ul class="list-news">

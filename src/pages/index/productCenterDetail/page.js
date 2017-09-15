@@ -11,4 +11,22 @@ $(() => {
     console.log('如果你看到这个Log，那么这个版本实际上是开发用的版本');
     console.log(config.API_ROOT);
   }
+  $(document).ready(function() {
+    // when pages load
+    $('.tab-content').hide();
+    $('.list-tabs li:first').addClass('active');
+    $('.tab-content:first').show();
+
+    // event click
+    $('.list-tabs li').click(function() {
+      $('.list-tabs li').removeClass('active');
+      $(this).addClass('active');
+      // var index = $(this).index();
+      $('.tab-content').hide();
+      var activeTab = $(this).find('a').attr('href');
+      $(activeTab).fadeIn();
+      // $(this).parent().next().next().children().eq(index).show().siblings().hide();
+      return false;
+    });
+  });
 });

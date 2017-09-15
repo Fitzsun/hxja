@@ -42,26 +42,24 @@
           a{
             color:#58abff;
             border-bottom: 1px solid #58abff;
-          }
-          i{
-            display: block;
+            &:after{
+              content:"";
+              display: block;
+              position: absolute;
+              width:5px;
+              height:5px;
+              background:#58abff;
+              top:100%;
+              left:50%;
+              transform: translate(-50%,-50%) rotateZ(45deg);
+            }
           }
         }
         li{
-          position: relative;
           display: inline-block;
           text-align: center;
-          i{
-            display: none;
-            position: absolute;
-            width:5px;
-            height:5px;
-            background:#58abff;
-            top:100%;
-            left:50%;
-            transform: translate(-50%,-50%) rotateZ(45deg);
-          }
           a{
+            position: relative;
             display:block;
             color:#666;
             width:100px;
@@ -69,6 +67,9 @@
             border-bottom:1px solid transparent;
           }
         }
+      }
+      .tab-content{
+        min-height:712px;
       }
       .list-items{
         width:1200px;

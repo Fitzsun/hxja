@@ -37,12 +37,17 @@
   </div>
   <div class="parameters">
     <ul class="list-tabs">
-      <li class="active"><a href="#" title="商品介绍">商品介绍</a></li>
-      <li><a href="#" title="商品参数">商品参数</a></li>
+      <li><a href="#tab1" title="商品介绍">商品介绍</a></li>
+      <li><a href="#tab2" title="商品参数">商品参数</a></li>
     </ul>
     <div class="line"></div>
-    <div class="list-content">
-      <img src="<%= BUILD_FILE.images['proDetailDesc'] %>" alt="商品介绍">
+    <div class="tab-container">
+      <div id="tab1" class="tab-content">
+        <img src="<%= BUILD_FILE.images['proDetailDesc'] %>" alt="商品介绍">
+      </div>
+      <div id="tab2" class="tab-content">
+        <h1>这是第二个标签</h1>
+      </div>
     </div>
   </div>
 </div>

@@ -1,23 +1,27 @@
 .carousel-container{
   position: relative;
   width:100%;
-  height:400px;
-  overflow: hidden;
+  // height:400px;
+  // overflow: hidden;
 }
 
 .bd{
-  width:1920px;
-  height:400px;
+  // width:1920px;
+  width:100%;
+  // height:400px;
   margin:0 auto;
-  border:1px solid red;
-  // overflow: hidden;
+  overflow: hidden;
   position: relative;
 }
 .carousel-inner{
-  position: absolute;
-  width:5760px;
+  position: relative;
+  // width:5760px;
+  // width:300%;
   li{
-    float:left;
+    a{
+      display: block;
+      // width:100%;
+    }
   }
 }
 
@@ -28,29 +32,30 @@
 
 .carousel-indicator{
   position: absolute;
+  display: flex;
+  justify-content: space-around;
   width:100px;
   height:14px;
   line-height: 50px;
   overflow: hidden;
   cursor:pointer;
-  position: absolute;
-  bottom:46px;
+  bottom:5%;
   left:50%;
   transform: translateX(-50%);
   .active{
     background:#48abff;
   }
   >li{
-    float: left;
+    // float: left;
     width:14px;
     height:14px;
-    margin-left:12px;
+    // margin-left:12px;
     border-radius:50%;
     border:1px solid #48abff;
     // background:#48abff;
-    &:first-of-type{
-      margin-left:0;
-    }
+    // &:first-of-type{
+    //   margin-left:0;
+    // }
   }
 }
 
@@ -356,8 +361,13 @@
         margin-bottom:28px;
         color:#666;
       }
-      .news-carousel{
+      #slidy-container{
         float:left;
+        width:580px;
+        overflow: hidden;
+        a{
+          display: block;
+        }
       }
       .list-news{
         text-align: left;
@@ -385,4 +395,9 @@
       }
     } // news end
   }  // main end
+}
+
+
+#slidy-container{
+  
 }

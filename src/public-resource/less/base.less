@@ -107,6 +107,7 @@ a{
       margin:0;
     }
     .logoBar-right{
+      cursor:default;
       float:right;
       span{
         display: inline-block;
@@ -142,14 +143,17 @@ a{
           display: block;
           height:90px;
           width:150px;
-          background:url('../imgs/logo.jpg') no-repeat scroll 0 -20px;
+          img{
+            vertical-align: middle;
+            transform: translateY(-30%);
+          }
         }
         &:last-child{
           margin-left:66px;
           position:relative;
           img{
             position:absolute;
-            bottom:20px;
+            bottom:30px;
           }
         }
       }
@@ -169,6 +173,11 @@ a{
   >ul{
     width:1200px;
     margin:0 auto;
+    >.active{
+      a{
+        color:#000;
+      }
+    }
     >li{
       &:hover{
         i{

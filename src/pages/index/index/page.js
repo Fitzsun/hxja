@@ -1,10 +1,11 @@
 //  html.js文件只用来组装html,css,js统一在page.js中require()
-require('cp');
-require('lessDir/sprite.css');
-require('./page.less');
+require('cp');  // 调用公共的逻辑  比如导航栏点击事件变颜色等(里边还require了公共的样式)
+require('lessDir/sprite.css');  // 调用雪碧图
+require('./page.less'); // 调用视图特有的css
+// 调用处理后的图片和第三方库   build-file
 const config = require('configModule');
 
-$((cssSlidy) => {
+$(() => {
   /* global IS_PRODUCTION:true */ // 由于ESLint会检测没有定义的变量，因此需要这一个`global`注释声明IS_PRODUCTION是一个全局变量(当然在本例中并不是)来规避warning
   if (!IS_PRODUCTION) {
     console.log('如果你看到这个Log，那么这个版本实际上是开发用的版本');
@@ -66,9 +67,10 @@ $((cssSlidy) => {
   // })
   // 鼠标划入圆点
   $('.carousel-indicator li').mouseover(function() {
-    var _index = $(this).index();
-    $('.carousel-inner').stop().animate({left: -_index * 100 + '%'}, 150);
-    $('.carousel-indicator li').eq(_index).addClass('active').siblings().removeClass('active');
+    // 这里之前为_index变量,得使用同一个全局变量i去控制
+    i = $(this).index();
+    $('.carousel-inner').stop().animate({left: -i * 100 + '%'}, 150);
+    $('.carousel-indicator li').eq(i).addClass('active').siblings().removeClass('active');
   });
   // 定时器自动播放
   timer = setInterval(function() {
@@ -79,9 +81,9 @@ $((cssSlidy) => {
     };
     $('.carousel-inner').stop().animate({left: -i * 100 + '%'}, 'slow');
     if (i === $('.carousel-inner li').length - 1) {
-      $('.carousel-idicator li').eq(0).addClass('active').siblings().removeClass('active');
+      $('.carousel-indicator li').eq(0).addClass('active').siblings().removeClass('active');
     } else {
-      $('.carousel-idicator li').eq(i).addClass('active').siblings().removeClass('active');
+      $('.carousel-indicator li').eq(i).addClass('active').siblings().removeClass('active');
     }
   }, 2000);
   // 鼠标移入，暂停自动播放，移出，开始自动播放
@@ -96,12 +98,14 @@ $((cssSlidy) => {
       };
       $('.carousel-inner').stop().animate({left: -i * 100 + '%'}, 'slow');
       if (i === $('.carousel-inner li').length - 1) {
-        $('.carousel-idicator li').eq(0).addClass('active').siblings().removeClass('active');
+        $('.carousel-indicator li').eq(0).addClass('active').siblings().removeClass('active');
       } else {
-        $('.carousel-idicator li').eq(i).addClass('active').siblings().removeClass('active');
+        $('.carousel-indicator li').eq(i).addClass('active').siblings().removeClass('active');
       }
     }, 2000);
   });
+  // 引入纯css写的轮播图插件  c3的animation
 
-  cssSlidy();
+  // 滚动监听
+  // 逐渐显示出来
 });

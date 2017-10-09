@@ -61,7 +61,7 @@
 
 .carousel-control{
   position: absolute;
-  height:400px;
+  height:100%;
   width:24px;
   line-height: 400px;
   // position: absolute;
@@ -257,14 +257,17 @@
             background:transparent;
             transform: translateX(-50%);
           }
+          transition: all .5s ease-in-out;
+          cursor:pointer;
           &:hover{
+            transform: translateY(-5%);
             span{
               background:#48abff;
             }
-            box-shadow:-2px 0 3px #eee, /*左边阴影*/  
-            2px 0 3px #eee, /*右边阴影*/  
-            0 -2px 3px #eee, /*顶部阴影*/  
-            0 2px 3px #eee; /*底边阴影*/
+            box-shadow:-2px 0 5px #ccc, /*左边阴影*/  
+            2px 0 10px #ccc, /*右边阴影*/  
+            0 -2px 5px #ccc, /*顶部阴影*/  
+            0 2px 10px #ccc; /*底边阴影*/
           }
         }
         >a{
@@ -313,6 +316,7 @@
         margin-bottom:50px;
       }
       ul:last-of-type{
+        cursor:default;
         li{
           border-left:1px solid #ccc;
           float:left;
@@ -341,6 +345,25 @@
               font-size: 16px;
               color:#666;
               margin-bottom:16px;
+            }
+            span{
+              display: inline-block;
+              position: relative;
+              i{
+                display: inline-block;
+                position: absolute;
+                bottom:0;
+                left:50%;
+                width:0;
+                transform: translateX(-50%);
+                transition: width .5s ease-in-out;
+              }
+              &:hover{
+                i{
+                  width:100%;
+                  border-bottom:1px solid #48abff;
+                }
+              }
             }
             dd{
               font-size: 14px;
@@ -398,6 +421,6 @@
 }
 
 
-#slidy-container{
+// #slidy-container{
   
-}
+// }

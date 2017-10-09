@@ -8,6 +8,7 @@ module.exports = {
   },
   images: {
     // 'login-bg': require('!!file-loader?name=static/images/[name].[ext]!../imgs/login-bg.jpg'),
+    'logo': require('!!file-loader?name=static/images/[name].[ext]!../imgs/index/logo.jpg'),
     'slogan': require('!!file-loader?name=static/images/[name].[ext]!../imgs/header/slogan.png'),
     'enSlogan': require('!!file-loader?name=static/images/[name].[ext]!../imgs/footer/en-slogan.png'),
     'contactLogo': require('!!file-loader?name=static/images/[name].[ext]!../imgs/footer/contact-logo.png'),

@@ -21,6 +21,7 @@ var configPlugins = [
   }),
 
   /* 抽取出所有通用的部分 */
+  /* 只是雪碧图的方法 */
   new SpritesmithPlugin({
     // 目标小图标
     src: {
@@ -52,7 +53,7 @@ var configPlugins = [
     filename: 'commons/commons/webpack-runtime.[hash].js',
   }),
   /* 抽取出chunk的css */
-  new ExtractTextPlugin('[name]/styles.[contenthash].css'),
+  new ExtractTextPlugin('css/styles.[contenthash].css'),
   /* 配置好Dll */
   // new webpack.DllReferencePlugin({
   //   context: dirVars.staticRootDir, // 指定一个路径作为上下文环境，需要与DllPlugin的context参数保持一致，建议统一设置为项目根目录
